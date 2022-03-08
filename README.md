@@ -12,5 +12,4 @@ Outsourcing Website.
 #### Description
 
 Building your future.
-Amazing earth
-Amazing Universe
+Makes Revenue.
