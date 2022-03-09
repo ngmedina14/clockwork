@@ -40,137 +40,32 @@
         </div>
     </nav>
 
-    <div class="container-md container-sm">
-        <form>
-            <div class="row text-center">
-                <h2>Sign-Up to find the work you Love</h2>
-            </div>
 
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <label for="first-name"></label>
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <label for="middle-name"></label>
-                    <input type="text" class="form-control" placeholder="Middle name" aria-label="Middle name">
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <label for="last-name"></label>
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-                </div>
-                <div class=" col-sm-12">
-                    <label for="location"></label>
-                    <input type="text" class="form-control" placeholder="Location" aria-label="Location">
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <label for="email"></label>
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <label for="phone"></label>
-                    <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
-                </div>
-                <div class="col-sm-12">
-                    <label for="password"></label>
-                    <input type="text" class="form-control" placeholder="Password" aria-label="Password">
-                </div>
+    <div class="container">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6">
+                <div class="">
+                    <div class="card-body p-5 text-center">
 
-                <div class="col-md-6 mt-4">
-                    <div class="col">
-                        <label for="expertise"></label> Expertise:
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" selected>Full-Stack Developer</option>
-                            <option value="2">Front-End Developer</option>
-                            <option value="3">Back-End Developer</option>
-                        </select>
-                    </div>
-                    <div class="col">
-                        <label for="formRange" class="form-label">Skill Level</label>
-                        <input type="range" class="form-range" min="1" max="10" step="0.5" id="formRange">
-                    </div>
-                    <div class="col">
-                        <label for="Portfolio"></label>
-                        <input type="text" class="form-control" placeholder="Portfolio" aria-label="Portfolio">
-                    </div>
-                </div>
+                        <h3 class="mb-5">Login to Clockwork</h3>
 
-                <div class="row col-md-6 mt-4">
-                    <div class="col-6">
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                HTML
-                            </label>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
                         </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                CSS
-                            </label>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
                         </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Javascript
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                React JS
-                            </label>
-                        </div>
-                    </div>
 
-                    <div class="col-6">
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                PHP
-                            </label>
+                        <div class="form-floating mt-4">
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+                            <p>Don't have a Clockwork account?? <a href="#"><b>Sign-Up</b></a></p>
                         </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Java
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Python
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Ruby on Rails
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-4">
-                    <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
-                            style="height: 100px"></textarea>
-                        <label for="floatingTextarea">Short Introduction</label><br>
-                    </div>
-                    <div class="">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Yes, I understand and agree to the <b>Clockwork's Terms of Service</b>,
-                            including the <b>User Agreement</b> and <b>Privacy Policy</b>.
-                        </label>
-                    </div><br>
-                    <div class="col-sm-12 text-center">
-                        <button type="button" class="btn btn-primary btn-sm">Create my Account</button>
-                        <p>Already have an account? <a href="#"><b>Login</b></a></p>
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
