@@ -8,9 +8,242 @@
     <title>Clockwork</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+   <div class="container">
+       <!-- nav bar -->
+
+       <!-- home section -->
+      <section class="section-home">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-7 home-image">
+                <!-- <div class="home-image"> -->
+                    <img src="/assets/media/home-1.png" alt="" class="img-fluid">
+                <!-- </div> -->
+            </div>
+            <div class="col-12 col-md-12 col-lg-5 home-text">
+                <!-- <div class="home-text"> -->
+                    <h2>Hire the best <br> freelancers for <br> any job, online</h2>
+                    <button class="btn btn-primary">Get Started</button>
+                <!-- </div> -->
+            </div>
+        </div>
+      </section>
+
+      <!-- how it works -->
+      <section class="section-works">
+        <h1>How It Works</h1>
+        <p class="p-center">Get anything done, exactly how you want it. <br> Turn that spark of an idea into reality, with three easy steps.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 how-it-works">
+            <div class="steps">
+                <span class="numbers">1</span>
+                <div class="how-it-works-icon">
+                    <img src="/assets/media/category_md.png" alt="" class="img-fluid">
+                </div>
+                <div class="how-it-works-text">
+                    <p>Choose the service you need <br> from  our categories </p>
+                </div>
+            </div>
+            <div class="steps">
+                <span class="numbers">2</span>
+                <div class="how-it-works-icon">
+                    <img src="/assets/media/collab_md.png" alt="" class="img-fluid">
+                </div>
+                <div class="how-it-works-text">
+                    <p>Chollaborate with an <br> expert on your project </p>
+                </div>
+            </div>
+            <div class="steps">
+                <span class="numbers">3</span>
+                <div class="how-it-works-icon">
+                    <img src="/assets/media/approve_md.png" alt="" class="img-fluid">
+                </div>
+                <div class="how-it-works-text">
+                    <p>Review, approve, pay <br> and you're done </p>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="section-services">
+        <h1>Our Services</h1>
+        <p class="p-center">Get anything done, exactly how you want it. <br> Turn that spark of an idea into reality, with three easy steps.</p>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 our-services">
+            <!-- <a href="front-end.html" target="_blank" > -->
+                <div class="card">
+                    <img src="/assets/media/front-end.png" alt="" class="card-img-top img-fluid">
+                   <div class="card-body">
+                       <h5 class="card-title"> Front End Development</h5>
+                       <p class="card-text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit suscipit provident nemo ut reprehenderit exercitationem non, sunt ipsam, illo debitis modi porro possimus rerum dolore quidem laboriosam repellendus voluptatibus?
+                       </p>
+                   </div> 
+                </div>
+            <!-- </a> -->
+            <!-- <a href="back-end.html" target="_blank"> -->
+                <div class="card">
+                    <img src="/assets/media/back-end.png" alt="" class="card-img-top img-fluid">
+                   <div class="card-body">
+                       <h5 class="card-title"> Back End Development</h5>
+                       <p class="card-text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit suscipit provident nemo ut reprehenderit exercitationem non, sunt ipsam, illo debitis modi porro possimus rerum dolore quidem laboriosam repellendus voluptatibus?
+                       </p>
+                   </div> 
+                </div>
+            <!-- </a> -->
+            
+            <!-- <a href="full-stack.html" target="_blank"> -->
+                <div class="card">
+                    <img src="/assets/media/full-stack.png" alt="" class="card-img-top img-fluid">
+                   <div class="card-body">
+                       <h5 class="card-title"> Full Stack Development</h5>
+                       <p class="card-text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit suscipit provident nemo ut reprehenderit exercitationem non, sunt ipsam, illo debitis modi porro possimus rerum dolore quidem laboriosam repellendus voluptatibus?
+                       </p>
+                   </div> 
+                </div>
+            <!-- </a> -->
+        </div>
+      </section>
+
+      <!-- section-testimonials -->
+      <section class="section-testimonials">
+          <div class="testimonial-header">
+            <h1 class="text-justify">What our <span class="p-cursive">clients</span> say  about <br> our <span class="p-cursive">services</span></h1>
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
+              <!-- testimonial image -->
+              <div class="testimonial-image">
+                  <img src="/assets/media/testimonials-1.png" alt="" class="img-fluid">
+              </div>
+              <!-- testimonials carousel -->
+              <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="testimonial-div">
+                        <figure class="text-center">
+                            <!-- 1st testimonial -->
+                            <blockquote class="blockquote">
+                              <p> <span class="qoute"><i class="fa-solid fa-quote-left"></i></span>It's best to leave parts of a project that are not in your skill-set to a professional, it's like having a virtual team with a multiplicity of talents on call. <span class="qoute"><i class="fa-solid fa-quote-right"></i></span></p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Elon Musk of <cite title="Source Title">Tesla</cite>
+                            </figcaption>
+                             <!-- 2nd testimonial -->
+                            <blockquote class="blockquote">
+                                <p> <span class="qoute"><i class="fa-solid fa-quote-left"></i></span>I don't think business would have grown as fast or as well if not for clockwork's expertise and ability to adapt.<span class="qoute"><i class="fa-solid fa-quote-right"></i></span></p>
+                              </blockquote>
+                              <figcaption class="blockquote-footer">
+                                Bill Gates of <cite title="Source Title">Microsoft</cite>
+                              </figcaption>
+                        </figure>
+                      </div>
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="testimonial-div">
+                        <figure class="text-center">
+                            <!-- 1st testimonial -->
+                            <blockquote class="blockquote">
+                              <p> <span class="qoute"><i class="fa-solid fa-quote-left"></i></span>Clockwork is my go-to source for quick turnaround projects when I'm too swamped to do them myself. More control over the process and end product than "crowdsourced" sites. <span class="qoute"><i class="fa-solid fa-quote-right"></i></span></p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Manny Villar of <cite title="Source Title">All Day</cite>
+                            </figcaption>
+                             <!-- 2nd testimonial -->
+                            <blockquote class="blockquote">
+                                <p> <span class="qoute"><i class="fa-solid fa-quote-left"></i></span>I managed to find a web developer for the exact style I was looking for in a matter of minutes. The end result of the project was exceptional, and for a very fair price! <span class="qoute"><i class="fa-solid fa-quote-right"></i></span></p>
+                              </blockquote>
+                              <figcaption class="blockquote-footer">
+                                  Henry Sy of <cite title="Source Title">SM Group</cite>
+                              </figcaption>
+                        </figure>
+                      </div>
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="testimonial-div">
+                <figure class="text-center">
+                    <!-- 1st testimonial -->
+                    <blockquote class="blockquote">
+                      <p> <span class="qoute"><i class="fa-solid fa-quote-left"></i></span>One of the advantages of utilizing freelancers is finding talent with different skills quickly as our needs change <span class="qoute"><i class="fa-solid fa-quote-right"></i></span></p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Mark Zuckerberg  of <cite title="Source Title">Meta</cite>
+                    </figcaption>
+                     <!-- 2nd testimonial -->
+                    <blockquote class="blockquote">
+                        <p> <span class="qoute"><i class="fa-solid fa-quote-left"></i></span>It's  the go-to solution for any Agency looking to create a website withour the need for a team of developers. it levels the playing field and helps you compete with the big agencies. <span class="qoute"><i class="fa-solid fa-quote-right"></i></span></p>
+                      </blockquote>
+                      <figcaption class="blockquote-footer">
+                        Jaime Zobel de Ayala of <cite title="Source Title">Ayala Group</cite>
+                      </figcaption>
+                </figure>
+              </div>
+                    <div class="carousel-caption d-none d-md-block">
+                      
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+      </section>
+
+      <!-- about -->
+      <section class="section-about">
+          <h1>About Us</h1>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 about-us">
+              <div class="about-image">
+                  <img src="/assets/media/about-1.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="about-text">
+                  <h3>We are the best agency  to <br> improve your deals</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusamus illum reprehenderit possimus saepe perspiciatis ipsa fugit harum adipisci porro!</p>
+                  
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at ea, perspiciatis id dolores animi atque. Assumenda illum fugit amet dolor, natus molestiae quisquam nobis mollitia a cum non enim odio aliquam. Sint error inventore itaque quasi non beatae voluptatum voluptas eum. Commodi maiores pariatur necessitatibus vero cupiditate facere? Impedit.</p>
+              </div>
+          </div>
+          <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 about-analytics">
+            <div class="analytics-div">
+                <p class="analytics-number">1000<span class="about-icon">+</span></p>
+                <p class="analytics-text">PROJECTS DONE</p>
+            </div>
+          </div> -->
+      </section>
+
+
+  
+    
+
+
+
+
+
+</div>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2784285d41.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
