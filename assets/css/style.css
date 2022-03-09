@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 4em;
+}
+
+.p-center{
+    text-align: center;
+}
+.p-cursive{
+    font-style: italic;
+    color: #00857C;
+    
+}
+.qoute i{
+    padding: 8px;
+    color: #00857C;
+}
+.blockquote-footer{
+    color: #00857C;
+    font-weight: 500;
+}
+
+/* SECTIONS */
+.section-home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-works{
+    
+    border: 0px solid yellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-services,
+.section-testimonials,
+.section-about{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-testimonials{
+    background-color: #eaeaea;
+    padding: 10px;
+}
+
+
+
+
+/* HOME */
+.home-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    border: 0px solid pink;
+}
+
+/* HOW IT WORKS */
+
+.how-it-works,
+.our-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid pink;
+    padding: 10px;
+   
+
+}
+.steps{
+    border: 1px solid #000;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+.how-it-works-icon{
+    margin-bottom: 5px;
+}
+.how-it-works-text p{
+    text-align: center;
+    
+}
+.numbers{
+    font-size: 2.2em;
+    color: #00857C;
+}
+
+/* SERVICES */
+.our-services{
+    border: 0px solid red;
+    padding: 10px;
+}
+.card{
+    margin: 10px;
+    width: 20rem;
+}
+.card-text{
+    text-align: left;
+}
+
+/* TESTIMONIALS */
+.testimonial-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-div{
+    padding: 30px;
+    border: 0px solid red;
+}
+figure{
+    padding: 30px;
+}
+
+/* ABOUT */
+.about-text h3{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.about-analytics{
+    background-color: #00857C;
+}
+.analytics-number{
+    font-size: 2.8em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.about-icon {
+    font-size: .8em;
+    color: #FB9C03;
+}
+.analytics-text{
+    margin-top: 0;
+    color: #fff;
+}
