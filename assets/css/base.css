@@ -1,3 +1,7 @@
 body{
     background-color: antiquewhite;
 }
+
+.bg-primary{
+    background-color: #00857C !important;
+}
