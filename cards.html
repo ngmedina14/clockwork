@@ -1,58 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/scss/bootstrap-custom.css">
     <title>Cards</title>
-</head>
-<style>
-    .card{
-        width: 400px;
-        height: 650px;
+  </head>
+
+  <style>
+    .animate{
+        transition-duration: 0.5s; 
+           
     }
-    .background-image{
-        height: 200px;
+    .animate:hover{
+        transform: scale(1.2);
     }
-    .cover-img{
-        background-size: cover;
-        height: 200px;
-        width: 400px;
-    }
-    .profile-img{
-        display: block;
-        margin-top: -50px;
-        margin-left: auto;
-        margin-right: auto;
-        
-    }
-</style>
-<body>
+   
+  </style>
+  
+  <body>
     <div class="container">
-        <div class="card mt-5 border">
-            <div class="image-div">
-                <div class="background-image has-bg-img">
-                    <img src="/assets/media/front-end.png" alt="" class="img-fluid cover-img border">
+      <div class="card mt-5 border-primary max " style="width: 330px">
+        <div class="card-body p-0">
+            <img
+              src="https://placeimg.com/330/200/tech"
+              alt=""
+              height="200"
+              class="cover-img border w-100"
+            />
+            <div class="card-img-overlay overflow-hidden">
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="badge bg-primary bg-opacity-50">Beginner</span>
+                <div class="hstack gap-3">
+                  <a href="" class="text-primary opacity-75"
+                    ><i class="fa-brands fa-linkedin animate"></i
+                  ></a>
+                  <a href="" class="text-primary opacity-75">
+                    <i class="fa-brands fa-github animate"></i
+                  ></a>
+                  <a href="" class="text-primary opacity-75"
+                    ><i class="fa-solid fa-envelope animate"></i
+                  ></a>
                 </div>
-                <img src="/assets/media/collab_md.png" alt="" class="img-fluid rounded-circle border profile-img ">
+              </div>
+              <div class="vstack text-end" style="font-size: 10px">
+                <i><span class="bg-light bg-opacity-75 px-1">+639177544444</span></i>
+                <i><span class="bg-light bg-opacity-75 px-1">Makati City</span></i>
+              </div>
             </div>
-            <div class="card-body">
-                <div class="header text-center">
-                    <h4>Jirah Medina</h4>
-                    <h5>Front End Developer</h5>
-                    <h6><a href="#">githublink</a></h6>
-                </div>
-                <p>Beginner</p>
-                <p>CSS Javascript React Js</p>
-                <p>CSS Javascript React Js</p>
-                <p>Makati City</p>
-                <p>email@email.com</p>
-                <p>+63 917777777</p>
-            </div>
-        </div>
+          
+          <img style="position: absolute; top:125px; left: 89px; width:150px; height: 150px;"
+            src="https://placeimg.com/480/480/people"
+            alt=""
+            class="img-thumbnail rounded-circle border profile-img d-block mx-auto"
+          />
         
+          
+          <div class="text-center mt-5 pt-5">
+            <div class="header">
+                <h4>Jirah Medina</h4>
+                <h6 class="font-monospace">Front End Developer</h6>
+              </div>
+              <div class="hstack gap-2 justify-content-center">
+                <div class="bg-primary bg-opacity-25 border-primary px-1">CSS</div>
+                <div class="bg-primary bg-opacity-25 border-primary px-1">Javascript</div>
+                <div class="bg-primary bg-opacity-25 border-primary px-1">React Js</div>
+                <div class="bg-primary bg-opacity-25 border-primary px-1">React Js</div>
+              </div>
+              <a class="btn btn-outline-primary fs-6 my-3 position-relative">Portfolio</a>
+          </div>
+        </div>
+      </div>
+      
+
     </div>
-    
-</body>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/2784285d41.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
