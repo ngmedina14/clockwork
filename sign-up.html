@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary  text-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary text-center">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,140 +33,214 @@
                         <a class="nav-link text-light" href="#">Contact Us</a>
                     </li>
                 </ul>
-                <button type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold">LOGIN</button>
-                <button type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold">SIGN-UP</button>
+                <a href="./login.html" class="btn btn-primary btn-sm text-dark bg-light fw-bold">LOGIN</a>
+                <a href="./sign-up.html" class="btn btn-primary btn-sm text-dark bg-light fw-bold">SIGN-UP</a>
             </div>
         </div>
     </nav>
 
-    <div class="container-md container-sm">
-        <form>
-            <div class="row text-center">
-                <h2>Sign-Up to find the work you Love</h2>
-            </div>
-
+    <div class="container g-4 overflow-hidden">
+        <!-- TOAST -->
+        <div id="message" style="z-index: 1000;"
+            class="position-fixed top-0 start-50 translate-middle-x mt-5 toast d-flex align-items-center text-white border-0 fade"
+            role="alert" aria-live="assertive" aria-atomic="true">
+            <span class="fs-6 p-2 ps-3"></span>
+            <button type="button" class="btn-close btn-close-white ms-auto me-2" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+        <div class="row text-center my-5">
+            <h2>Sign-Up to find the work you Love</h2>
+        </div>
+        <form id="users" autocomplete="off">
             <div class="row">
+                <h6 class="user-select-none text-muted">Credential</h6>
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="username" name="username" required
+                            aria-describedby="username-validation" placeholder="Username" minlength="5" minlength="16"
+                            autocomplete="off">
+                        <label for="username">Username<span class="text-danger"> *</span></label>
+                        <small id="username-validation" aria-live="assertive"></small>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="form-floating mb-4">
+                        <input type="password" class="form-control" id="password" name="password" required
+                            aria-describedby="password-validation" placeholder="Password" minlength="5"
+                            autocomplete="off">
+                        <label for="password">Password<span class="text-danger"> *</span></label>
+                        <small id="password-validation" aria-live="assertive"></small>
+                    </div>
+                </div>
+                <hr class="bg-primary text-center">
+                <h6 class="user-select-none text-muted">Details</h6>
                 <div class="col-md-4 col-sm-12">
-                    <label for="first-name"></label>
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="first-name" name="first-name" required
+                            aria-describedby="first-name-validation" placeholder="First Name" autocomplete="off">
+                        <label for="first-name">First Name<span class="text-danger"> *</span></label>
+                        <small id="first-name-validation" aria-live="assertive"></small>
+                    </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <label for="middle-name"></label>
-                    <input type="text" class="form-control" placeholder="Middle name" aria-label="Middle name">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="middle-name" name="middle-name" required
+                            aria-describedby="middle-name-validation" placeholder="Middle Name" autocomplete="off">
+                        <label for="middle-name">Middle Name<span class="text-danger"> *</span></label>
+                        <small id="middle-name-validation" aria-live="assertive"></small>
+                    </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
-                    <label for="last-name"></label>
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="last-name" name="last-name" required
+                            aria-describedby="last-name-validation" placeholder="Last Name" autocomplete="off">
+                        <label for="last-name">Last Name<span class="text-danger"> *</span></label>
+                        <small id="last-name-validation" aria-live="assertive"></small>
+                    </div>
                 </div>
                 <div class=" col-sm-12">
-                    <label for="location"></label>
-                    <input type="text" class="form-control" placeholder="Location" aria-label="Location">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="location" name="location" required
+                            aria-describedby="location-validation" placeholder="Location" autocomplete="off">
+                        <label for="location">Location<span class="text-danger"> *</span></label>
+                        <small id="location-validation" aria-live="assertive"></small>
+                    </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <label for="email"></label>
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                    <div class="form-floating mb-4">
+                        <input type="text" class="form-control" id="mobile" name="mobile" required
+                            pattern="^[0-9]{10,11}" aria-describedby="mobile-validation" placeholder="Mobile"
+                            autocomplete="off">
+                        <label for="mobile">Mobile<span class="text-danger"> *</span></label>
+                        <small id="mobile-validation" aria-live="assertive"></small>
+                    </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <label for="phone"></label>
-                    <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
-                </div>
-                <div class="col-sm-12">
-                    <label for="password"></label>
-                    <input type="text" class="form-control" placeholder="Password" aria-label="Password">
-                </div>
-
-                <div class="col-md-6 mt-4">
-                    <div class="col">
-                        <label for="expertise"></label> Expertise:
-                        <select class="form-select" aria-label="Default select example">
-                            <option value="1" selected>Full-Stack Developer</option>
-                            <option value="2">Front-End Developer</option>
-                            <option value="3">Back-End Developer</option>
-                        </select>
+                    <div class="form-floating mb-4">
+                        <input type="email" class="form-control" id="email-address" name="email-address" required
+                            aria-describedby="email-address-validation" placeholder="Email Address" autocomplete="off">
+                        <label for="email-address">Email Address<span class="text-danger"> *</span></label>
+                        <small id="email-address-validation" aria-live="assertive"></small>
                     </div>
+                </div>
+                <div class="col-md-6">
                     <div class="col">
-                        <label for="formRange" class="form-label">Skill Level</label>
-                        <input type="range" class="form-range" min="1" max="10" step="0.5" id="formRange">
+                        <div class="form-floating mb-4">
+                            <input type="text" class="form-control" id="portfolio" name="portfolio" required
+                                aria-describedby="portfolio-validation" placeholder="Portfolio Link" autocomplete="off">
+                            <label for="portfolio">Portfolio Link<span class="text-danger"> *</span></label>
+                            <small id="portfolio-validation" aria-live="assertive"></small>
+                        </div>
                     </div>
                     <div class="col">
-                        <label for="Portfolio"></label>
-                        <input type="text" class="form-control" placeholder="Portfolio" aria-label="Portfolio">
+                        <div class="form-floating mb-4">
+                            <select class="form-select" id="expertise" name="expertise"
+                                aria-describedby="expertise-validation" required>
+                                <option selected="0">-</option>
+                                <option value="1">Frontend Developer</option>
+                                <option value="2">Backend Developer</option>
+                                <option value="3">Fullstack Developer</option>
+                            </select>
+                            <label for="expertise">Expertise<span class="text-danger"> *</span></label>
+                            <small id="expertise-validation" aria-live="assertive"></small>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating">
+                            <input type="range" class="form-control form-range" id="skill" name="skill" min="1" max="3"
+                                value='1' placeholder="Skill Level" autocomplete="off">
+                            <label class="text-nowrap" for="skill">Skill Level : Beginner | Intermediate |
+                                Expert<span class="text-danger"> *</span></label>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="row col-md-6 mt-4">
-                    <div class="col-6">
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                HTML
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                CSS
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Javascript
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                React JS
-                            </label>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                PHP
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Java
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Python
-                            </label>
-                        </div>
-                        <div class="form-check col">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Ruby on Rails
-                            </label>
+                <div class="col-md-6">
+                    <div>
+                        <button type="button" class="btn btn-outline-primary btn-sm mb-2" onclick="cboxAll()"
+                            data-bs-toggle="button" autocomplete="off">Select All</button>
+                        <span class="mb-3 user-select-none">
+                            Language:<span class="text-danger"> *</span></span>
+                        
+                        <div class="btn-group-vertical d-flex" role="group">
+                            <div class="btn-group" role="group">
+                                <input type="checkbox" class="btn-check col" id="html" value="HTML" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="html">HTML</label>
+                                <input type="checkbox" class="btn-check col" id="css" value="CSS" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="css">CSS</label>
+                                <input type="checkbox" class="btn-check col" id="javascript" value="Javascript"
+                                    name="language" autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="javascript">Javascript</label>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <input type="checkbox" class="btn-check col" id="react" value="React JS" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="react">React JS</label>
+                                <input type="checkbox" class="btn-check col" id="vue" value="Vue JS" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="vue">Vue JS</label>
+                                <input type="checkbox" class="btn-check col" id="angular" value="Angular JS" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="angular">Angular JS</label>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <input type="checkbox" class="btn-check col" id="node" value="Node JS" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="node">Node JS</label>
+                                <input type="checkbox" class="btn-check col" id="go" value="Go" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="go">Go</label>
+                                <input type="checkbox" class="btn-check col" id="php" value="PHP" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="php">PHP</label>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <input type="checkbox" class="btn-check col" id="java" value="Java" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="java">Java</label>
+                                <input type="checkbox" class="btn-check col" id="python" value="Python" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="python">Python</label>
+                                <input type="checkbox" class="btn-check col" id="ruby" value="Ruby" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="ruby">Ruby</label>
+                                <input type="checkbox" class="btn-check col" id="csharp" value="C#" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="csharp">C#</label>
+                            </div>
+                            <div class="btn-group" role="group">
+                                <input type="checkbox" class="btn-check col" id="sql" value="SQL" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="sql">SQL</label>
+                                <input type="checkbox" class="btn-check col" id="nosql" value="No SQL" name="language"
+                                    autocomplete="off" />
+                                <label class="btn btn-outline-primary" for="nosql">No SQL</label>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="mt-4">
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"
+                        <textarea class="form-control" placeholder="Bio" id="bio"
                             style="height: 100px"></textarea>
-                        <label for="floatingTextarea">Short Introduction</label><br>
+                        <label for="bio">Short Introduction</label><br>
                     </div>
-                    <div class="">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Yes, I understand and agree to the <b>Clockwork's Terms of Service</b>,
-                            including the <b>User Agreement</b> and <b>Privacy Policy</b>.
-                        </label>
-                    </div><br>
-                    <div class="col-sm-12 text-center">
-                        <button type="button" class="btn btn-primary btn-sm">Create my Account</button>
-                        <p>Already have an account? <a href="#"><b>Login</b></a></p>
-                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center my-5">
+                    <input class="form-check-input p-2 me-3" type="checkbox" id="term">
+                    <label class="form-check-label" for="term">
+                        Yes, I understand and agree to the <b>Clockwork's Terms of Service</b>,
+                        including the <b>User Agreement</b> and <b>Privacy Policy</b>.
+                    </label>
+                </div><br>
+                <div class="col-sm-12 text-center">
+                    <button type="button" id="register" class="btn btn-primary btn-lg mb-3">Create my Account</button>
+                    <p>Already have an account? <a href="./login.html"><b>Login</b></a></p>
+                    <button type="reset" class="mb-5 btn btn-outline-secondary btn-sm">reset</button>
                 </div>
             </div>
         </form>
@@ -174,8 +248,61 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script>
 
+    <script type="text/javascript" src="./assets/js/form-bootstrap5.js"></script>
+    <script type="text/javascript" src="./assets/js/common.js"></script>
+
+    <!-- Faker JS -->
+    <script type="module">
+        import { faker } from 'https://cdn.skypack.dev/@faker-js/faker';
+        let users = retrieveSessionData('users')
+        document.getElementById('username').value = `user${users.length}`
+        document.getElementById('password').value = `password${users.length}`
+        document.getElementById('first-name').value = faker.name.firstName();faker.lorem.sentences() 
+        document.getElementById('middle-name').value = faker.name.lastName();
+        document.getElementById('last-name').value = faker.name.lastName();
+        document.getElementById('location').value = faker.address.cityName();
+        document.getElementById('mobile').value = faker.phone.phoneNumber('09#########');
+        document.getElementById('email-address').value = 'ngmedina14@gmail.com';
+        document.getElementById('portfolio').value = 'https://ngmedina14.github.io/portfolio/portfolio.html';
+        // document.getElementById('male').checked = true;
+        // document.getElementById('female').checked = Math.random() < 0.5;
+        [...document.querySelectorAll('[name=language]')].map((mh) => mh.checked = Math.random() < 0.5);
+        document.querySelector('option:nth-child(2)').selected = true;
+        [...document.querySelectorAll('option:not(:first-child)')].map((mh) => mh.selected = Math.random() < 0.5);
+        document.getElementById('bio').value = faker.lorem.sentences() 
+        document.getElementById('skill').value = Math.floor(Math.random() * 3) + 1;
+    </script>
+
+    <script>
+        // Validation
+        let fields = document.querySelectorAll("#users input,select");
+        promptValidation(fields);
+
+
+        // term field
+        let term = document.getElementById('term');
+        term.onchange = () => {
+            let register = document.getElementById('register');
+            (register.hasAttribute('disabled')) ? register.removeAttribute('disabled') : register.setAttribute('disabled', null);
+        }
+
+        // Select All
+        function cboxAll() {
+            let cboxs = document.getElementsByName("language");
+            let filteredArray = Array(...cboxs).filter(i => i.checked == true)
+            Array(...cboxs).map((cbox, i) => (filteredArray.length == cboxs.length) ? cboxs[i].checked = false : cboxs[i].checked = true)
+        }
+
+        // Save Patient
+        register.onclick = function (e) {
+            e.preventDefault();
+            if (validateFormFields(fields)) {
+                if (appendSessionFormData('users')) {
+                    message('Saved.', 'success', true);
+                }
+            }
+        }
     </script>
 </body>
 

@@ -35,13 +35,3 @@ function appendSessionFormData(formID) {
     }
 
 }
-
-
-// Toast display message
-// toast('message','color')
-function toast(message, color) {
-    let toast = document.getElementById('toast');
-    toast.style.visibility = "visible";
-    toast.textContent = message;
-    toast.style.color = color;
-}

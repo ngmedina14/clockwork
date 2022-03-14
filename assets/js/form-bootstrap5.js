@@ -79,11 +79,24 @@ function validateFormFields(formFields) {
             connectedValidation.textContent = message;
             return false;
         } else {// if Valid
-            field.classList.remove("is-invalid") ;
+            field.classList.remove("is-invalid");
             connectedValidation.textContent = '';
             return true;
         }
     });
     (valid.includes(false)) ? [...formFields][valid.findIndex(element => element == false)].focus() : null;
     return !valid.includes(false)
+}
+
+
+// Toast display message
+// message('Register first.', 'danger', true);
+function message(message, color, autoHide) {
+    let toast = document.getElementById('message');
+    toast.classList.add(`bg-${color}`)
+    textBody = toast.firstElementChild;
+    textBody.textContent = message
+    new bootstrap.Toast(toast, {
+        autohide: autoHide
+    }).show()
 }
