@@ -72,7 +72,7 @@
             e.preventDefault();
             let users = retrieveSessionData('users')
             if (users.length == 0) {
-                message('Register first.', 'danger', false);
+                message('Sign-up first.', 'warning', false);
             } else {
                 let login = users.map((user) => {
                     if (user["username"] == username.value && user["password"] == password.value) {
