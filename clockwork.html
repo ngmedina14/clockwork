@@ -6,59 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clockwork</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="./assets/scss/bootstrap-custom.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
 </head>
 
-<body>
-   <div class="container">
-       <!-- nav bar -->
+<!-- 
+  font-family: 'Dancing Script', cursive;
+font-family: 'Roboto', sans-serif;
+ -->
 
-       <!-- home section -->
-      <section class="section-home">
+<body>
+   
+       <!-- nav bar -->
+       
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="myNav">
+          <div class="container-fluid">
+              <a class="navbar-brand" >Logo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link text-light"  href="#section-home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light" href="#section-works">How It Works</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light " href="#section-services">Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light " href="#section-testimonials">Testimonials</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light " href="#section-about">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link text-light " href="#section-contact">Contact Us</a>
+                      </li>
+                  </ul>
+                  <a href="login.html" type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold me-3">LOGIN</a>
+                  <a href="sign-up.html" type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold">SIGN-UP</a>
+              </div>
+          </div>
+      </nav>
+       
+
+     <div class="container" >
+      <!-- home section -->
+      <section class="section-home container" id="section-home">
         <div class="row">
             <div class="col-12 col-md-12 col-lg-7 home-image">
                 <!-- <div class="home-image"> -->
-                    <img src="/assets/media/home-1.png" alt="" class="img-fluid">
+                    <img src="./assets/media/home-1.png" alt="" class="img-fluid">
                 <!-- </div> -->
             </div>
             <div class="col-12 col-md-12 col-lg-5 home-text">
                 <!-- <div class="home-text"> -->
-                    <h2>Hire the best <br> freelancers for <br> any job, online</h2>
-                    <button class="btn btn-primary">Get Started</button>
+                    <h2>A community of designers, developers and creatives ready for your project</h2>
+                    <button class="btn btn-primary mt-3">Get Started</button>
                 <!-- </div> -->
             </div>
         </div>
       </section>
 
       <!-- how it works -->
-      <section class="section-works">
+      <section class="section-works container" id="section-works">
         <h1>How It Works</h1>
         <p class="p-center">Get anything done, exactly how you want it. <br> Turn that spark of an idea into reality, with three easy steps.</p>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 how-it-works">
             <div class="steps">
                 <span class="numbers">1</span>
                 <div class="how-it-works-icon">
-                    <img src="/assets/media/category_md.png" alt="" class="img-fluid">
+                    <img src="/assets/media/category3.svg" alt="" class="steps-img img-fluid">
                 </div>
                 <div class="how-it-works-text">
                     <p>Choose the service you need <br> from  our categories </p>
                 </div>
             </div>
-            <div class="steps">
+            <div class="steps ">
                 <span class="numbers">2</span>
                 <div class="how-it-works-icon">
-                    <img src="/assets/media/collab_md.png" alt="" class="img-fluid">
+                    <img src="/assets/media/collaborate_svg.svg" alt="" class="steps-img img-fluid">
                 </div>
                 <div class="how-it-works-text">
-                    <p>Chollaborate with an <br> expert on your project </p>
+                    <p>Collaborate with an <br> expert on your project </p>
                 </div>
             </div>
             <div class="steps">
                 <span class="numbers">3</span>
                 <div class="how-it-works-icon">
-                    <img src="/assets/media/approve_md.png" alt="" class="img-fluid">
+                    <img src="/assets/media/agreement_svg.svg" alt="" class="steps-img img-fluid">
                 </div>
                 <div class="how-it-works-text">
                     <p>Review, approve, pay <br> and you're done </p>
@@ -68,56 +116,75 @@
       </section>
 
       <!-- services -->
-      <section class="section-services">
-        <h1>Our Services</h1>
-        <p class="p-center">Get anything done, exactly how you want it. <br> Turn that spark of an idea into reality, with three easy steps.</p>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 our-services">
+      <section class="section-services" id="section-services">
+        <h1>Hire Freelancers </h1>
+        <p class="p-center">Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations. <br> Choose a category to see popular skills for hire.</p>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 our-services">
             <!-- <a href="front-end.html" target="_blank" > -->
-                <div class="card">
-                    <img src="/assets/media/front-end.png" alt="" class="card-img-top img-fluid">
-                   <div class="card-body">
-                       <h5 class="card-title"> Front End Development</h5>
-                       <p class="card-text">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit suscipit provident nemo ut reprehenderit exercitationem non, sunt ipsam, illo debitis modi porro possimus rerum dolore quidem laboriosam repellendus voluptatibus?
-                       </p>
-                   </div> 
-                </div>
-            <!-- </a> -->
-            <!-- <a href="back-end.html" target="_blank"> -->
-                <div class="card">
-                    <img src="/assets/media/back-end.png" alt="" class="card-img-top img-fluid">
-                   <div class="card-body">
-                       <h5 class="card-title"> Back End Development</h5>
-                       <p class="card-text">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit suscipit provident nemo ut reprehenderit exercitationem non, sunt ipsam, illo debitis modi porro possimus rerum dolore quidem laboriosam repellendus voluptatibus?
-                       </p>
-                   </div> 
-                </div>
+                
+                 
+                    <div class="card shadow hover-zoom">
+                      <img src="/assets/media/4.png" alt="" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title"> Front End Development</h5>
+                        <p class="card-text">
+                          Collaborate with our front end developer to bring your ideas into reality, deliver your brand story, enhance your visual identity, and gain strategic advantage in the market.
+                        </p>
+                        <div class="card-button">
+                          <a href="frond-end.html" target="_blank" class="btn btn-primary">Select</a>
+                        </div>
+                    </div> 
+                  </div>
+                 
             <!-- </a> -->
             
+            
             <!-- <a href="full-stack.html" target="_blank"> -->
-                <div class="card">
-                    <img src="/assets/media/full-stack.png" alt="" class="card-img-top img-fluid">
+                
+                  <div class="card shadow hover-zoom">
+                    <img src="/assets/media/3.png" alt="" class="card-img-top img-fluid">
                    <div class="card-body">
                        <h5 class="card-title"> Full Stack Development</h5>
                        <p class="card-text">
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sit suscipit provident nemo ut reprehenderit exercitationem non, sunt ipsam, illo debitis modi porro possimus rerum dolore quidem laboriosam repellendus voluptatibus?
+                        Being the most-preferred full stack development company, we make sure that our dedicated full stack development team is assisting you on each stage of development, be it UI & UX strategy, DevOps services or web development stack.
                        </p>
+                       <div class="card-button">
+                        <a href="full-stack.html" target="_blank"  class="btn btn-primary">Select</a>
+                       </div>
                    </div> 
+                  
                 </div>
+                
             <!-- </a> -->
+
+            <!-- <a href="back-end.html" target="_blank"> -->
+              
+                <div class="card shadow hover-zoom">
+                  <img src="/assets/media/2.png" alt="" class="card-img-top img-fluid">
+                 <div class="card-body">
+                     <h5 class="card-title"> Back End Development</h5>
+                     <p class="card-text">
+                      We design back ends for enterprise mobile apps, smart devices and wearables, multimedia distributing mobile solutions, mobile messengers, social networks and more.
+                     </p>
+                     <div class="card-button">
+                      <a href="back-end.html" target="_blank"  class="btn btn-primary">Select</a>
+                     </div>
+                 </div> 
+              </div>
+              
+        <!-- </a> -->
         </div>
       </section>
 
       <!-- section-testimonials -->
-      <section class="section-testimonials">
+      <section class="section-testimonials" id="section-testimonials">
           <div class="testimonial-header">
             <h1 class="text-justify">What our <span class="p-cursive">clients</span> say  about <br> our <span class="p-cursive">services</span></h1>
           </div>
           <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
               <!-- testimonial image -->
               <div class="testimonial-image">
-                  <img src="/assets/media/testimonials-1.png" alt="" class="img-fluid">
+                  <img src="/assets/media/feedback.svg" alt="" class="testimonial-img img-fluid">
               </div>
               <!-- testimonials carousel -->
               <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -210,7 +277,7 @@
       </section>
 
       <!-- about -->
-      <section class="section-about">
+      <section class="section-about" id="section-about">
           <h1>About Us</h1>
           <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 about-us">
               <div class="about-image">
@@ -218,28 +285,175 @@
               </div>
               <div class="about-text">
                   <h3>We are the best agency  to <br> improve your deals</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, accusamus illum reprehenderit possimus saepe perspiciatis ipsa fugit harum adipisci porro!</p>
+                  <p>Clockwork is a software company based in Taguig City, Philippines. Established in 2010, their team now consists of 27 employees. They offer mobile app development, web development, UX/UI design, and IT staff augmentation services. The majority of their clients are small businesses in the IT industry.</p>
                   
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at ea, perspiciatis id dolores animi atque. Assumenda illum fugit amet dolor, natus molestiae quisquam nobis mollitia a cum non enim odio aliquam. Sint error inventore itaque quasi non beatae voluptatum voluptas eum. Commodi maiores pariatur necessitatibus vero cupiditate facere? Impedit.</p>
+                  <p>We believe there is a better way to get digital projects done. Buyers should have easy access to talent all around the world, select who they wish to work with, and have quality work completed without any surprises. We are equally passionate about providing genuine opportunities for our talented community to do the work they love.</p>
               </div>
           </div>
-          <!-- <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 about-analytics">
+
+           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 about-analytics text-center text-white mt-5 mb-5">
+            <div class="analytics-div">
+                <p class="analytics-number">360<span class="about-icon">+</span></p>
+                <p class="analytics-text">WEBSITE DESIGN</p>
+            </div>
+            <div class="analytics-div">
+                <p class="analytics-number">560<span class="about-icon">+</span></p>
+                <p class="analytics-text">HAPPY CLIENTS</p>
+            </div>
             <div class="analytics-div">
                 <p class="analytics-number">1000<span class="about-icon">+</span></p>
                 <p class="analytics-text">PROJECTS DONE</p>
             </div>
-          </div> -->
+          </div>
+
+          <!-- Meet Our Team -->
+          <h1>Meet Our Team</h1>
+          <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 our-team">
+            <div class="team-member-card hover-down">
+              <div class="team-member-image">
+                <img src="/assets/media/collab_md.png" alt="" class="team-img img-fluid">
+              </div>
+              <div class="team-member-text">
+                <h5>Neil Medina</h5>
+                <h6>Full Stack Developer</h6>
+              </div>
+             <div class="member-content">
+              <div class="team-member-socials">
+                <p><i class="fa-brands fa-linkedin"></i><i class="fa-solid fa-user"></i><i class="fa-brands fa-github-square"></i></p>
+              </div>
+             </div>
+            </div>
+            <div class="team-member-card hover-down">
+              <div class="team-member-image">
+                <img src="/assets/media/collab_md.png" alt="" class="team-img img-fluid">
+              </div>
+              <div class="team-member-text">
+                <h5>Ariel Tulinao</h5>
+                <h6>Front End Developer</h6>
+              </div>
+              <div class="member-content">
+                <div class="team-member-socials">
+                  <p><i class="fa-brands fa-linkedin"></i><i class="fa-solid fa-user"></i><i class="fa-brands fa-github-square"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="team-member-card hover-down">
+              <div class="team-member-image">
+                <img src="/assets/media/collab_md.png" alt="" class="team-img img-fluid">
+              </div>
+              <div class="team-member-text">
+                <h5>Jirah Medina</h5>
+                <h6>Back End Developer</h6>
+              </div>
+              <div class="member-content">
+                <div class="team-member-socials">
+                  <p><i class="fa-brands fa-linkedin"></i><i class="fa-solid fa-user"></i><i class="fa-brands fa-github-square"></i></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+         
       </section>
 
+      <!-- Contact Us -->
+      <section class="section-contact" id="section-contact">
+        <h1>Contact Us</h1>
+        <h4 class="p-center">Got any inquiries? Drop us a message.</h4>
+        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 contact-us">
+          <div class="contact-us-image">
+            <img src="/assets/media/contact-1.png" alt="" class="contact-img img-fluid">
+          </div>
+          <div class="contact-us-form">
+            <form action="" class="" id="contact-form" class="">
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-1">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputInvalid" placeholder="name">
+                    <label for="floatingInputInvalid">Full Name</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInputInvalid" placeholder="email">
+                    <label for="floatingInputInvalid">Email</label>
+                  </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-1">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputInvalid" placeholder="subject">
+                  <label for="floatingInputInvalid">Subject</label>
+                </div>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInputInvalid" placeholder="phone">
+                  <label for="floatingInputInvalid">Phone</label>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-1">
+              <div class="form-floating">
+                <textarea class="form-control" name="message" placeholder="Type your message here" id="floatingTextarea2" style="height: 150px"></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
+             </div>
+              <div class="row row-cols-1 row-cols-md-1 row-cols-lg-1 g-1">
+              <div class="form-floating text-center">
+                <button class="btn btn-primary" type="submit" name="submit">Submit</button>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+     </div>
+      <footer class="">
+        <div class="footer">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+              <div class="footer-image">
+                <img src="/assets/media/home-1.png" alt="" class="footer-img img-fluid">
+              </div>
+              <div class="footer-contact-details">
+              <h5>Menu</h5>
+                 <p> <a href="#section-home">Home</a></p>
+                 <p> <a href="#section-works">How It Works</a></p>
+                 <p> <a href="#section-services">Hire Freelancers</a></p>
+                 <p> <a href="#section-testimonials">Testimonials</a></p>
+                 <p> <a href="#section-about">About Us</a></p>
+                 <p> <a href="#section-contact">Contact Us</a></p>
+              </div>
+              <div class="footer-contact-details">
+                <h5>Follow us</h5>
+               <p class="footer-socials">
+                <a href="https://www.facebook.com/KodegoPH/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/kodegoph/?originalSubdomain=ph" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://twitter.com/kodegoph?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+              </p>
+              </div>
+              <div class="footer-contact-details">
+                <div class="footer-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h5>Email</h5>
+                <p>info@clockwork.com <br> service@clockwork.com</p>
+              </div>
+              <div class="footer-contact-details">
+                <div class="footer-icon">
+                  <i class="fa-solid fa-square-phone"></i>
+                </div>
+                <h5>Phone</h5>
+                <p>02-8888-1800<br>02-8888-1800</p> 
+              </div>
+              <div class="footer-contact-details">
+                <div class="footer-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <h5>Location</h5>
+                <p>1280 BGC, Taguig City, <br> Metro Manila</p>
+              </div>
+          </div>
+        </div>
+        <div class="row copyright">
+          <p>&copy; 2022 Clockwork.com</p>
+        </div>
+      </footer>
 
-  
-    
 
-
-
-
-
-</div>
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/2784285d41.js" crossorigin="anonymous"></script>
@@ -247,7 +461,91 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
     <script>
+      // scrollspy
+      let section = document.querySelectorAll('section');
+      let navLinks = document.getElementsByClassName('nav-link');
+
+      window.onscroll = () => {
+        [...section].forEach(sec => {
+          let top = window.scrollY;
+          let offset = sec.offsetTop - 120;
+          let height = sec.offsetHeight;
+          let id = sec.getAttribute('id');
+         
+
+          if(top >= offset && top < offset + height){
+            [...navLinks].forEach(link => {
+              link.classList.remove('active');
+            
+              document.querySelector('.nav-link[href*='+id+']').classList.add('active');
+            })
+          }
+        })
+      }
+
+      window.onload = function() {
+        let appear = document.querySelector('.our-services');
+        let smallScreen = 'screen and (min-width:100px) and (max-width:991px)';
+        let largeScreen = 'screen and (min-width:1200px) and (max-width:2400px)';
+        // let mediumScreen = 'screen and (max-width:992px)';
+
+        let isSmallScreen = window.matchMedia(smallScreen).matches;
+        let isLargeScreen = window.matchMedia(largeScreen).matches;
+        // let isMediumScreen = window.matchMedia(mediumScreen).matches;
+        console.log(isLargeScreen);
+       
+        window.addEventListener('scroll', scrollWorks);
+
+        function scrollWorks(){
+          console.log(window.scrollY);
+          if(window.scrollY>=480){
+           
+            document.querySelectorAll('.steps')[0].classList.add('fade-left1');
+            document.querySelectorAll('.steps')[1].classList.add('fade-left2');
+            document.querySelectorAll('.steps')[2].classList.add('fade-left3');
+          }
+          else{
+           
+           document.querySelectorAll('.steps')[0].classList.remove('fade-left1');
+           document.querySelectorAll('.steps')[1].classList.remove('fade-left2');
+           document.querySelectorAll('.steps')[2].classList.remove('fade-left3');
+         }
+         if(isSmallScreen){
+            if(window.scrollY>=1780){
+            appear.style.opacity ='1';
+            appear.style.transform ='translateY(0px)';
+            appear.style.transition ='1s ease-in-out';
+          } else{
+            appear.style.opacity ='0';
+            appear.style.transform ='translateY(-50px)';
+        
+          }
+         }
+         else if(!isSmallScreen) {
+          if(window.scrollY>=1350){
+          appear.style.opacity ='1';
+          appear.style.transform ='translateX(0px)';
+          appear.style.transition ='1s ease-in-out';
+         } else{
+          appear.style.opacity ='0';
+          appear.style.transform ='translateX(-50px)';
+         }
+         }else{
+          if(window.scrollY>=900){
+          appear.style.opacity ='1';
+          appear.style.transform ='translateX(0px)';
+          appear.style.transition ='1s ease-in-out';
+         } else{
+          appear.style.opacity ='0';
+          appear.style.transform ='translateX(-50px)';
+         }
+         }
+        }
+
+        
+      }
 
     </script>
 </body>
