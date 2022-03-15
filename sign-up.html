@@ -140,7 +140,7 @@
                             data-bs-toggle="button" autocomplete="off">Select All</button>
                         <span class="mb-3 user-select-none">
                             Language:<span class="text-danger"> *</span></span>
-                        
+
                         <div class="btn-group-vertical d-flex" role="group">
                             <div class="btn-group" role="group">
                                 <input type="checkbox" class="btn-check col" id="html" value="HTML" name="language"
@@ -160,8 +160,8 @@
                                 <input type="checkbox" class="btn-check col" id="vue" value="Vue JS" name="language"
                                     autocomplete="off" />
                                 <label class="btn btn-outline-primary" for="vue">Vue JS</label>
-                                <input type="checkbox" class="btn-check col" id="angular" value="Angular JS" name="language"
-                                    autocomplete="off" />
+                                <input type="checkbox" class="btn-check col" id="angular" value="Angular JS"
+                                    name="language" autocomplete="off" />
                                 <label class="btn btn-outline-primary" for="angular">Angular JS</label>
                             </div>
                             <div class="btn-group" role="group">
@@ -202,8 +202,7 @@
                 </div>
                 <div class="mt-4">
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Bio" id="bio"
-                            style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Bio" id="bio" style="height: 100px"></textarea>
                         <label for="bio">Short Introduction</label><br>
                     </div>
                 </div>
@@ -235,7 +234,7 @@
         let users = retrieveSessionData('users')
         document.getElementById('username').value = `user${users.length}`
         document.getElementById('password').value = `password${users.length}`
-        document.getElementById('first-name').value = faker.name.firstName();faker.lorem.sentences() 
+        document.getElementById('first-name').value = faker.name.firstName();
         document.getElementById('middle-name').value = faker.name.lastName();
         document.getElementById('last-name').value = faker.name.lastName();
         document.getElementById('location').value = faker.address.cityName();
@@ -245,7 +244,7 @@
         [...document.querySelectorAll('[name=language]')].map((mh) => mh.checked = Math.random() < 0.5);
         document.querySelector('option:nth-child(2)').selected = true;
         [...document.querySelectorAll('option:not(:first-child)')].map((mh) => mh.selected = Math.random() < 0.5);
-        document.getElementById('bio').value = faker.lorem.sentences() 
+        document.getElementById('bio').value = faker.lorem.sentences()
         document.getElementById('skill').value = Math.floor(Math.random() * 3) + 1;
     </script>
 
@@ -272,9 +271,23 @@
         // Save Patient
         register.onclick = function (e) {
             e.preventDefault();
-            if (validateFormFields(fields)) {
-                if (appendSessionFormData('users')) {
-                    message('Saved.', 'success', true);
+            let users = retrieveSessionData('users')
+            if (users.length == 0) {
+                if (validateFormFields(fields)) {
+                    if (appendSessionFormData('users')) {
+                        message('Saved.', 'success', true);
+                    }
+                }
+            } else {
+                isvalid = users.map((user) => (user["username"] == username.value) ? true : false).includes(true);
+                if (isvalid) {
+                            message('Username already taken.', 'danger', true);
+                } else {
+                    if (validateFormFields(fields)) {
+                        if (appendSessionFormData('users')) {
+                            message('Saved.', 'success', true);
+                        }
+                    }
                 }
             }
         }
