@@ -77,7 +77,7 @@
                 let login = users.map((user) => {
                     if (user["username"] == username.value && user["password"] == password.value) {
                         sessionStorage.setItem('user-session', user["first-name"]);
-                        window.location.href = 'cards.html';
+                        window.location.href = 'clockwork.html';
                         return true
                     } else {
                         return false

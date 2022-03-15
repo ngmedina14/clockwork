@@ -115,9 +115,9 @@
                             <select class="form-select" id="expertise" name="expertise"
                                 aria-describedby="expertise-validation" required>
                                 <option selected="0">-</option>
-                                <option value="1">Frontend Developer</option>
-                                <option value="2">Backend Developer</option>
-                                <option value="3">Fullstack Developer</option>
+                                <option value="Front End Developer">Front End Developer</option>
+                                <option value="Back End Developer">Back End Developer</option>
+                                <option value="Fullstack Developer">Fullstack Developer</option>
                             </select>
                             <label for="expertise">Expertise<span class="text-danger"> *</span></label>
                             <small id="expertise-validation" aria-live="assertive"></small>
@@ -242,8 +242,6 @@
         document.getElementById('mobile').value = faker.phone.phoneNumber('09#########');
         document.getElementById('email-address').value = 'ngmedina14@gmail.com';
         document.getElementById('portfolio').value = 'https://ngmedina14.github.io/portfolio/portfolio.html';
-        // document.getElementById('male').checked = true;
-        // document.getElementById('female').checked = Math.random() < 0.5;
         [...document.querySelectorAll('[name=language]')].map((mh) => mh.checked = Math.random() < 0.5);
         document.querySelector('option:nth-child(2)').selected = true;
         [...document.querySelectorAll('option:not(:first-child)')].map((mh) => mh.selected = Math.random() < 0.5);
