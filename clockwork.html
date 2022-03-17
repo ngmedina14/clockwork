@@ -58,18 +58,20 @@ font-family: 'Roboto', sans-serif;
             <a class="nav-link text-light " href="#section-contact">Contact Us</a>
           </li>
         </ul>
-        <a href="./login.html" type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold me-3"
-          target="_blank">LOGIN</a>
-        <a href="./sign-up.html" type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold"
-          target="_blank">SIGN-UP</a>
-        <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Right-aligned dropdown-menu
+        <div id="guest" hidden>
+          <a href="./login.html" type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold me-3"
+            target="_blank">LOGIN</a>
+          <a href="./sign-up.html" type="button" class="btn btn-primary btn-sm text-dark bg-light fw-bold"
+            target="_blank">SIGN-UP</a>
+        </div>
+
+        <div id="signed" class="btn-group" hidden>
+          <button id="account" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><b id="logout" class="dropdown-item">Logout</b></li>
           </ul>
         </div>
       </div>
@@ -352,7 +354,7 @@ font-family: 'Roboto', sans-serif;
       <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 our-team">
         <div class="team-member-card hover-down">
           <div class="team-member-image">
-            <img src="./assets/media/neil.JPG" alt="" class="team-img img-fluid">
+            <img src="./assets/media/neil.png" alt="" class="team-img img-fluid">
           </div>
           <div class="team-member-text">
             <h5>Neil Medina</h5>
@@ -464,7 +466,7 @@ font-family: 'Roboto', sans-serif;
     <div class="footer">
       <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
         <div class="footer-image">
-         <a href="#section-home"> <img src="./assets/media/logo.png" alt="" class="footer-img img-fluid"></a>
+          <a href="#section-home"> <img src="./assets/media/logo.png" alt="" class="footer-img img-fluid"></a>
         </div>
         <div class="footer-contact-details">
           <h5>Menu</h5>
@@ -545,6 +547,17 @@ font-family: 'Roboto', sans-serif;
     }
 
     window.onload = function () {
+      // Login Session
+      let session = localStorage.getItem("user-session");
+      if (session) {
+
+        signed.removeAttribute("hidden");
+        account.textContent = `${session.charAt(0).toUpperCase() + session.slice(1)
+          }`;
+      } else {
+        guest.removeAttribute("hidden");
+      }
+      
       let appear = document.querySelector('.our-services');
       let smallScreen = 'screen and (min-width:100px) and (max-width:991px)';
       let largeScreen = 'screen and (min-width:1200px) and (max-width:2400px)';
@@ -605,6 +618,11 @@ font-family: 'Roboto', sans-serif;
 
 
     }
+    // Logout remove session
+    logout.onclick = () => {
+        localStorage.removeItem("user-session");
+        window.location.href = "login.html";
+      };
 
   </script>
 </body>
