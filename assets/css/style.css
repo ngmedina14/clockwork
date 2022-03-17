@@ -139,6 +139,8 @@ h2{
 .our-services{
     border: 0px solid red;
     padding: 10px;
+    
+   
 }
 
 
@@ -229,6 +231,11 @@ figure{
 .team-member-socials i:hover{
 
     color: #000;
+}
+.team-member-image .team-img{
+    width: 128px;
+    height: 128px;
+    border-radius: 5px;
 }
 
 .member-content{
