@@ -258,7 +258,7 @@
         let term = document.getElementById('term');
         term.onchange = () => {
             let register = document.getElementById('register');
-            (register.hasAttribute('disabled')) ? register.removeAttribute('disabled') : register.setAttribute('disabled', null);
+            (term.checked) ? register.removeAttribute('disabled') : register.setAttribute('disabled', null);
         }
 
         // Select All
@@ -268,7 +268,7 @@
             Array(...cboxs).map((cbox, i) => (filteredArray.length == cboxs.length) ? cboxs[i].checked = false : cboxs[i].checked = true)
         }
 
-        // Save Patient
+        // Save Users
         register.onclick = function (e) {
             e.preventDefault();
             let users = retrieveSessionData('users')
