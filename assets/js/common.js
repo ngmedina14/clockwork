@@ -73,7 +73,7 @@ function createCard(parentID, data) {
     
 
     // add class to Element
-    card.classList.add("card","col","m-3","p-0","border-primary");
+    card.classList.add("card","col-xs","m-3","p-0","border-primary");
     body.classList.add("card-body","p-0","m-0");
     coverImage.classList.add("img-fluid", "w-100");
     overlay.classList.add("card-img-overlay", "w-100");
