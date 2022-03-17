@@ -13,7 +13,7 @@ h1{
     margin-bottom: 2rem;
 }
 h2{
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
 }
 
@@ -50,7 +50,9 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
 .section-works{
     
     border: 0px solid yellow;
@@ -76,6 +78,8 @@ h2{
 
 
 /* HOME */
+
+
 .home-text{
     display: flex;
     flex-direction: column;
@@ -213,7 +217,7 @@ figure{
     /* padding: 20px; */
     width: 330px;
     height: 350px;
-    border: 1px solid #00857C;
+    border: 0px solid #00857C;
     border-radius: 20px;
     margin: 18px;
     overflow: hidden;
@@ -232,9 +236,14 @@ figure{
 
     color: #000;
 }
+.team-member-image{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 3px;
+}
 .team-member-image .team-img{
-    width: 128px;
-    height: 128px;
+    /* width: 128px;
+    height: 128px; */
     border-radius: 5px;
 }
 
@@ -377,6 +386,7 @@ footer{
 }
 
 
+
 /* ANIMATION */
 
 .hover-down:hover{
@@ -393,8 +403,6 @@ footer{
     transition: all 0.5s ease;
     transform: scale(1.1);
 }
-
-
 
 .fade-left1{
     -webkit-animation: fade-left 1.2s both;
@@ -461,20 +469,3 @@ footer{
         transform: translateX(0);
     }
 }
-
-
-
-/* HOVERS */
-/* .hover-down:hover{
-    text-shadow: none;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    transform: translateY(20px);
-}
-.hover-zoom:hover{
-    text-shadow: none;
-    box-sizing: border-box;
-    transition: all 0.3s ease;
-    transform: scale(1.1);
-} */
-
